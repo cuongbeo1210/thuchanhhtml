@@ -14,6 +14,17 @@
     <option value="Bạn thích máy bay">Máy Bay</option>
 </select>
 <p onmouseover="mouseover()" id="test" onmouseout="mouseout()"> Test thử mouseover</p>
-<script src="onchange.js"></script>
+<script>
+    function chonphuongtien() {
+        var a = document.getElementById("b").value;
+        alert(a);
+    }
+    function mouseover() {
+        document.getElementById("test").style.color="aqua";
+    }
+    function mouseout() {
+        document.getElementById("test").style.color = "black"
+    }
+</script>
 </body>
 </html>
