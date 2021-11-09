@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+    <script src="nhungjava/nhungjava.js"></script>
+
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th>Amount</th>
+           <th>Form Currency</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><input type="text" id="nhap"></td>
+            <td>
+                <select id="sl1">
+                    <option value="vn">Việt Nam</option>
+                    <option value="nb">Nhật Bản</option>
+                </select>
+            </td>
+            <td>
+                <select id="sl2">
+                    <option value="vn1">VND</option>
+                    <option value="nb1">JPY</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+</form>
+<button onclick="convert()">Convert</button>
+<script>
+    function convert() {
+        let nhapgiatri = document.getElementById('nhap').value;
+        let sl1 = document.getElementById('sl1').value;
+        let sl2 = document.getElementById('sl2').value;
+        if (sl1==sl2){
+            alert(nhapgiatri);
+        }
+        if (sl1== "vn" && sl2== "nb1"){
+            alert('Số tiền là :' + nhapgiatri/200.8);
+        }
+        if (sl1 == "nb" && sl2== "vn1"){
+            alert('Số tiền là :' +nhapgiatri*200.8);
+        }
+    }
+    convert();
+</script>
+
+</body>
+</html>
