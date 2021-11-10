@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chỉ Số Cân Nặng</title>
+</head>
+<body>
+<script>
+    let cannang = +prompt('Nhập cân nặng của bạn :')
+    let chieucao = +prompt('Nhập chiều cao của bạn :')
+    let bmi = parseFloat(cannang/(chieucao**2))
+    let result = bmi < 18.5 ? alert("Under weight") :
+        bmi <=25 ? alert("normal") :
+            bmi < 30 ? alert("Over weight") :
+                bmi >= 30 ? alert("Obese") : "";
+</script>
+</body>
+</html>
