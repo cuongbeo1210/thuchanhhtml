@@ -8,20 +8,20 @@
 <script>
     let userName = prompt("Ai đấy ??", '');
     if (userName == 'em đây') {
-        alert('Ok em')
+        let pass = prompt('Password?', '');
+        if (pass == 'cuongdeptrai') {
+            alert('Welcome!');
+        } else if (pass == null) {
+            alert('Canceled.');
+        } else {
+            alert('Wrong password');
+        }
     } else if (userName == null) {
         alert('Canceled');
     } else {
         alert("Tôi không biết bạn");
     }
-    let pass = prompt('Password?', '');
-    if (pass == 'cuongdeptrai') {
-        alert('Welcome!');
-    } else if (pass == null) {
-        alert('Canceled.');
-    } else {
-        alert('Wrong password');
-    }
+
 </script>
 </body>
 </html>
