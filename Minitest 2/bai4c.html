@@ -5,32 +5,30 @@
     <title>Bài 4</title>
 </head>
 <body>
-<input type="text" id="a">
-<input type="text" id="b">
+<label><input type="text" id="a" placeholder="Nhập giá trị a vào đây"></label>
+<label><input type="text" id="b" placeholder="Nhập giá trị b vào đây"></label>
 <input type="button" value="Tính" onclick="tinhtoan() ">
 <p id="display"></p>
 <script>
     function tinhtoan() {
-        let a = parseInt(document.getElementById("a").value)
-        let b = parseInt(document.getElementById("b").value)
-        let arr = new Array();
-        j = 0;
-        tong = 0;
+        let a = parseInt(document.getElementById("a").value);
+        let b = parseInt(document.getElementById("b").value);
+        let arr = new Array(); j = 0; tong = 0;
         if (a < b) {
             for (i = a; i <= b; i++) {
                 arr[j] = i;
-                tong += i
+                tong += i;
                 j++;
             }
             } else if (b < a) {
                 for (i = b; i <= a; i++) {
                     arr[j] = i;
-                    tong += i
+                    tong += i;
                     j++;
                 }
 
             }
-            document.getElementById("display").innerText = 'Tổng là : ' + tong;
+            document.getElementById("display").innerText = 'Tổng của dãy số là : ' +tong;
 
     }
 
