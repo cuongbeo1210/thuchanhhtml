@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<input type="text" id="a">
+<input type="button" value="Tính" onclick="tinhtoan()">
+
+
+<p id="display"></p>
+<p id="display1"></p>
+<script>
+    function tinhtoan(){
+        let canh = parseFloat(document.getElementById("a").value)
+        let chuvi = canh*4
+        let dientich = canh*canh
+        document.getElementById("display").innerText = "Chu vi là :" +chuvi
+        document.getElementById("display1").innerText ="Diện tích là :" +dientich
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<input type="text" id="a">
+<input type="text" id="b">
+<input type="button" value="Tính" onclick="tinhtoan() ">
+<p id="display"></p>
+<script>
+    function tinhtoan(){
+        let a = parseInt(document.getElementById("a").value)
+        let b = parseInt(document.getElementById("b").value)
+        let arr = new Array(); j = 0; tong = 0;
+        for (i=a; i<=b; i++){
+            arr[j] = i;
+            tong += i
+            j++;
+        }
+        document.getElementById("display").innerText = 'Tổng là : ' +tong;
+        }
+
+
+</script>
+</body>
+</html>

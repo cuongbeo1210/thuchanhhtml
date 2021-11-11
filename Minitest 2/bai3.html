@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <h1 id="result"></h1>
+    <input type="button" value="Go" onclick="tinhtoan()">
+
+<script>
+    function tinhtoan (){
+        let a = document.getElementById("a").value
+        let b = document.getElementById("b").value
+        let result = a*b
+        document.getElementById("result").innerText=result;
+    }
+
+</script>
+</body>
+</html>
