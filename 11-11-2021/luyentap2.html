@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi</title>
+</head>
+<body>
+<script>
+    // bài 2 chuyển đổi mét sang ft
+    // let met = +prompt("Nhập mét :")
+    // let Ft = met * 3.2808
+    // if (met > 0){
+    //     alert("Ft bằng " +Ft)
+    // } else
+    //     alert("Mời nhập lại")
+
+    // bài 3 tính diện tích hình vuông
+    // let canh = +prompt("Nhập chiều dài cạnh ")
+    // if (canh > 0){
+    //     alert("Diện tích hình vuông là "+(canh*canh))
+    // } else
+    //     alert("Nhập lại đê")
+
+    // bài 4
+    // let chieudai = +prompt("Nhập độ dài chiều dài ")
+    // let chieurong = +prompt("Nhập độ dài chiều rộng ")
+    // if (chieudai > 0 && chieurong > 0 && chieudai > chieurong) {
+    //     alert("Diện tích hình chữ nhật là "+(chieudai*chieurong))
+    // } else
+    //     alert("Nhập lại đê")
+
+    // bài 5
+    // let canhke1 = +prompt("Nhập độ dài cạnh 1")
+    // let canhke2 = +prompt("Nhập độ dài cạnh 2")
+    // if (canhke1 > 0 && canhke2 > 0){
+    //     alert("Diện tích tam giác là "+(canhke2*canhke1*0.5))
+    // } else
+    //     alert("Nhập lại đê")
+
+    // bài 6       giải phương trình bậc nhất ax + b = 0
+    // let a = +prompt("Nhập hệ số a ")
+    // let b = +prompt("Nhập hệ số b ")
+    // if (a === 0 && b === 0){
+    //     alert("Phương trình có vô số nghiệm")
+    // } else if (a === 0 && b !== 0){
+    //     alert("Phương trình vô nghiệm")
+    // }else if (a !== 0){
+    //     alert("Nghiệm của phương trình là "+(-b/a))
+    // }
+
+    // bài 8
+    // let tuoi = +prompt("Nhập số tuổi ")
+    // if (tuoi > 0 && tuoi < 120){
+    //     alert("Đây là tuổi của một người")
+    // } else
+    //     alert("Không phải tuổi của một người")
+
+    // bài 9
+    // let a = +prompt("Nhập chiều dài cạnh a ")
+    // let b = +prompt("Nhập chiều dài cạnh b ")
+    // let c = +prompt("Nhập chiều dài cạnh c ")
+    // if (a > 0 && b > 0 && b > 0 && a + b > c && a + c > b && b + c > a){
+    //     alert("Đây là 3 cạnh của tam giác")
+    // } else
+    //     alert("Đây không phải 3 cạnh của tam giác")
+
+    // bài 10
+    // let sodien = +prompt("Nhập số điện ")
+    // if (sodien < 50){
+    //     alert("Số tiền điện là "+(sodien*1500))
+    // } else if (sodien < 100 && sodien >= 50){
+    //     alert("Số tiền điện là "+((sodien - 50)*2000 + (50*1500)))
+    // } else if (sodien >= 100 && sodien < 150){
+    //     alert("Số tiền điện là "+((sodien-100)*2500+(50*2000)+(50*1500)))
+    // }
+
+    // bài 11
+    // let thunhap = +prompt("Nhập tổng thu nhập ")
+    // if (thunhap < 10**7){
+    //     alert("Tiền thuế cần đóng là 0")
+    // } else if (thunhap > 10**7 && thunhap < 2*10**7){
+    //     alert("Tiền thuế cần đóng là "+(thunhap*0.15))
+    // }else if (thunhap >= 2*10**7){
+    //     alert("tiền thuế cần đóng là "+(thunhap*0.25))
+    // }`
+
+    // bài 12
+    let sotienvay = +prompt("Nhập số tiền cần vay ")
+    let sothanggui = +prompt("Nhập số tháng gửi ")
+    let tongsotien = sotienvay*(1+0.01)**(sothanggui)
+    alert(tongsotien)
+</script>
+
+</body>
+</html>
