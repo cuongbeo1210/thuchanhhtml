@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><input type="text" id="ip1" placeholder="Nhập độ dài cạnh thứ nhất "></label>
+<label><input type="text" id="ip2" placeholder="Nhập độ dài cạnh thứ hai "></label>
+<label><input type="text" id="ip3" placeholder="Nhập độ dài cạnh thứ ba"></label>
+<button type="button" onclick="tinhtoan()">Tính</button>
+<h1 id="display"></h1>
+<script>
+    function tinhtoan() {
+        let number1 = +document.getElementById('ip1').value;
+        let number2 = +document.getElementById('ip2').value;
+        let number3 = +document.getElementById('ip3').value;
+        if (number1 > 0 && number2 > 0 && number3 > 0) {
+            if (number1 + number2 > number3 &&
+                number1 + number3 > number2 &&
+                number3 + number2 > number1) {
+                if (number1 === number2 && number2 === number3 && number3 === number1) {
+                    document.getElementById('display').innerText = "Đây là tam giác đều";
+                } else if (number1 === number2 || number2 === number3 || number3 === number1) {
+                    document.getElementById('display').innerText = "Đây là tam giác cân";
+                } else if ((number1 ** 2 === number2 ** 2 + number3 ** 2) ||
+                    (number2 ** 2 === number1 ** 2 + number3 ** 2) ||
+                    (number3 ** 2 === number1 ** 2 + number2 ** 2)) {
+                    document.getElementById('display').innerText = "Đây là tam giác vuông";
+                } else {
+                    document.getElementById('display').innerText = "Đây là tam giác";
+                }
+            } else {
+                document.getElementById('display').innerText = "Đây là không phải 3 cạnh của tam giác";
+            }
+        } else {
+            document.getElementById('display').innerText = "Đây là không phải 3 cạnh của tam giác";
+        }
+    }
+</script>
+</body>
+</html>
