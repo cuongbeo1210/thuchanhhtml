@@ -16,16 +16,13 @@
         let number2 = +document.getElementById('ip2').value;
         let number3 = +document.getElementById('ip3').value;
         if (number1 > 0 && number2 > 0 && number3 > 0) {
-            if (number1 + number2 > number3 &&
-                number1 + number3 > number2 &&
-                number3 + number2 > number1) {
+            if (number1 + number2 > number3 && number1 + number3 > number2 && number3 + number2 > number1) {
                 if (number1 === number2 && number2 === number3 && number3 === number1) {
                     document.getElementById('display').innerText = "Đây là tam giác đều";
                 } else if (number1 === number2 || number2 === number3 || number3 === number1) {
                     document.getElementById('display').innerText = "Đây là tam giác cân";
                 } else if ((number1 ** 2 === number2 ** 2 + number3 ** 2) ||
-                    (number2 ** 2 === number1 ** 2 + number3 ** 2) ||
-                    (number3 ** 2 === number1 ** 2 + number2 ** 2)) {
+                    (number2 ** 2 === number1 ** 2 + number3 ** 2) || (number3 ** 2 === number1 ** 2 + number2 ** 2)) {
                     document.getElementById('display').innerText = "Đây là tam giác vuông";
                 } else {
                     document.getElementById('display').innerText = "Đây là tam giác";
