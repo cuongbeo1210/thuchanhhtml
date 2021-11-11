@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><input type="text" id="nam" placeholder="Nhập vào năm"></label>
+
+<button type="button" onclick="tinhtoan()">Tính</button>
+<p id="display"></p>
+<script>
+    function tinhtoan() {
+        let nam = document.getElementById("nam").value;
+        document.getElementById("display").innerText = +nam + ' thuộc thế kỉ ' + (Math.floor(nam / 100) + 1);
+    }
+</script>
+</body>
+</html>
