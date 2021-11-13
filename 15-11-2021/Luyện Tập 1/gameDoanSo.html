@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xổ Số Miền Bắc</title>
+</head>
+<body>
+    <h2>Xổ Số Miền Bắc</h2>
+    <input type="button"  value="Quay Số" onclick="GuessNumber()" />
+    <script>
+        function GuessNumber(){
+            for (let i = 0; i <3 ; i++) {
+                let number = +prompt("Nhập 1 số bất kỳ từ 0 -> 10 : ")
+                var luckyNumber = Math.floor(Math.random() * 10) +1;
+                if (number === luckyNumber){
+                    alert("Con số may mắn hôm nay là "+luckyNumber +" Chúc mừng bạn trúng giải độc đắc")
+                } else
+                    alert("Con số may mắn hôm nay là "+luckyNumber +" Chúc bạn may mắn lần sau")
+            } alert("Bạn đã hết lượt chơi")
+        }
+    </script>
+</body>
+</html>
