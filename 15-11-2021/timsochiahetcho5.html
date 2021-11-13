@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number1 = 0, number2 = 1, nextNumber;
+    console.log('Dãy Fibonacci:');
+    console.log(number1);
+    console.log(number2);
+    nextNumber = number1 + number2;
+
+    for (let i = 2; i < 20; i++) {
+        if (nextNumber % 5 !== 0){
+            console.log(nextNumber);
+            number1 = number2;
+            number2 = nextNumber;
+            nextNumber = number1 + number2;
+        } else
+            console.log(nextNumber +" Chia hết cho 5")
+    }
+</script>
