@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giai Thừa</title>
+</head>
+<body>
+<script>
+    let number = +prompt('Nhập giá trị bất kỳ : ')
+    let giaithua = 1;
+        if (number > 0) {
+            for (let i = 1; i <= number; i++) {
+                giaithua *= i
+            }
+            alert('Giai Thừa Bằng ' + giaithua)
+        } else
+            alert("Hãy nhập số khác lớn hơn 0")
+
+</script>
+</body>
+</html>
