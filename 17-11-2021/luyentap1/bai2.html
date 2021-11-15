@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = [3,1,-5,7,12,34,21,-13,32,33]
+    let max = 0
+    for (let i = 0; i < number.length; i++) {
+        if (number[i] > max ) {
+            max = number[i]
+        }
+    } document.write("Số lớn nhất là : "+max +" vị trí trong mảng là : "+number.indexOf(max) +"<br>")
+
+    let max1 = Math.max.apply(Math, number);
+    document.write("Giá trị lớn nhất là " +max1 +" tại vị trí "+number.indexOf(max1) )
+
+</script>
+</body>
+</html>
