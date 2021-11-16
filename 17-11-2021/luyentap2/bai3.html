@@ -27,12 +27,12 @@
     // console.log("Số từ trong chuỗi là : " + count)
 
     for (let i = 0; i < chars.length; i++) {
-        if (+chars[i] >= 0){
+        if (isNaN(chars[i])){
             count += 1
         }
     }
     console.log(chars)
-    console.log("Số từ trong chuỗi là : " + (chars.length -count))
+    console.log("Số ký tự số trong chuỗi là : " +(chars.length -count))
 
 </script>
 </body>
