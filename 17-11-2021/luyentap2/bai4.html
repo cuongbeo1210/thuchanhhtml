@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = 'acvdfg21235wsd';
+    let chars = str.split("");
+    let count = 0;
+    for (let i = 0; i < chars.length; i++) {
+        if (+chars[i] >= 0){
+            count += 1
+        }
+    }
+    console.log(chars)
+    console.log("Số từ trong chuỗi là : " + (chars.length -count))
+</script>
+</body>
+</html>
