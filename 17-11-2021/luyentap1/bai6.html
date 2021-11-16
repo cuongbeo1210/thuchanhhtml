@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sophantu = +prompt("Nhập số phần tử : ")
+    let number = []
+    for (let i = 0; i < sophantu; i++) {
+        let phantu = +prompt("Nhập phần tử : ")
+        number.push(phantu)
+    }
+    let songuyen = +prompt("Nhập số nguyên : ")
+    if (number.indexOf(songuyen) !== -1){
+        document.write("Số nguyên này có trong mảng")
+    } else
+        document.write("Số nguyên này không có trong mảng")
+
+
+</script>
+</body>
+</html>
