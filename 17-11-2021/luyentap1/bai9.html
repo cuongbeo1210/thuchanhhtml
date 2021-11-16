@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sophantu = +prompt("Nhập số lượng phần tử : ")
+    let mang1 = []
+    let mang2 = []
+    let mang3 = [4,1,2,3,6,11,12,14,15,13,21,17,24,19,32,33,41,45,65,36]
+    for (let i = 0; i < sophantu; i++) {
+        let phantu = +prompt("Nhập phần tử mảng 1 : ")
+        mang1.push(phantu)
+    }
+    for (let i = 0; i < sophantu; i++) {
+        let phantu1 = +prompt("Nhập phần tử mảng 2 : ")
+        mang2.push(phantu1)
+    }
+
+    let gopmang = mang3.concat(mang1,mang2)
+    document.write(gopmang)
+</script>
+</body>
+</html>
