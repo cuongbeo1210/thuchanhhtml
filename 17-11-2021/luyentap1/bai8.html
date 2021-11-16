@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sophantu = +prompt("Nhập số phần tử : ")
+    let number = []
+    for (let i = 0; i < sophantu; i++) {
+        let phantu = +prompt("Nhập phần tử : ")
+        number.push(phantu)
+    }
+    let tg;
+    for(let i = 0; i < sophantu - 1; i++){
+        for(let j = i + 1; j < sophantu; j++){
+            if(number[i] > number[j]){
+                tg = number[i];
+                number[i] = number[j];
+                number[j] = tg;
+            }
+        }
+    }
+    document.write(number)
+
+</script>
+</body>
+</html>
