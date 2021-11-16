@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = [3,1,-5,7,12,34,21,-13,32,33]
+    let max = 0
+    let sum = 0
+    for (let i = 0; i < number.length; i++) {
+        if (number[i] > max ) {
+            max = number[i]
+        }
+    } document.write("Số lớn nhất là : "+max +" vị trí trong mảng là : "+number.indexOf(max) +"<br>")
+    for (let i = 0; i < number.length; i++) {
+        sum += number[i]
+    }
+    document.write("giá trị trung bình của mảng là : "+(sum/number.length))
+</script>
+</body>
+</html>
