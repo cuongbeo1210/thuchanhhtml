@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form>
+    <p>
+        <label>Độ F</label>
+        <input id="inputFahrenheit" type="number" placeholder="Nhập độ F"
+               oninput="chuyendoinhietdo(this.value)"
+               onchange="chuyendoinhietdo(this.value)">
+    </p>
+    <p>Độ C: <span id="outputCelsius"></span></p>
+</form>
+
+<script>
+
+    function chuyendoinhietdo(valNum) {
+        valNum = parseFloat(valNum);
+        chuyendoi = (valNum - 32) / 1.8
+        document.getElementById("outputCelsius").innerHTML = chuyendoi.toFixed(2);
+    }
+
+</script>
+</body>
+</html>
