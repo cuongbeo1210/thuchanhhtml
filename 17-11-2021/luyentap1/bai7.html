@@ -14,14 +14,17 @@
     }
     let songuyen = +prompt("Nhập số nguyên : ")
     if (number.indexOf(songuyen) !== -1) {
-        let xoasonguyen = number.filter(function (element) {
+        var xoasonguyen = number.filter(function (element) {
             return element !== songuyen
         })
-        document.write(xoasonguyen)
+
     } else
         document.write("Số nguyên này không có trong mảng")
-
-
+    let count = number.length - xoasonguyen.length
+    for (let i = 1; i <= count; i++) {
+        xoasonguyen.push(0)
+    }
+    document.write(xoasonguyen)
 </script>
 </body>
 </html>
