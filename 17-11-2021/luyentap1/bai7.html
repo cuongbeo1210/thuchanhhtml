@@ -6,21 +6,20 @@
 </head>
 <body>
 <script>
-    let sophantu = +prompt("Nhập số phần tử : ")
+    let sophantu = +prompt("Nhập số lượng phần tử : ")
     let number = []
     for (let i = 0; i < sophantu; i++) {
         let phantu = +prompt("Nhập phần tử : ")
         number.push(phantu)
     }
     let songuyen = +prompt("Nhập số nguyên : ")
-    if (number.indexOf(songuyen) !== -1){
-        let xoasonguyen = number.filter(function(element){
+    if (number.indexOf(songuyen) !== -1) {
+        let xoasonguyen = number.filter(function (element) {
             return element !== songuyen
         })
         document.write(xoasonguyen)
     } else
         document.write("Số nguyên này không có trong mảng")
-
 
 
 </script>
