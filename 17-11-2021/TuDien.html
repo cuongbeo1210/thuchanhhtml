@@ -5,27 +5,28 @@
     <title>Bài 4</title>
 </head>
 <body>
-<input type="text" id="a">
-<input type="button" value="Dịch" onclick="phiendich()">
+<label><input type="text" id="a"></label>
+<label><input type="button" value="Dịch" onclick="phiendich()"></label>
 
 
 <p id="display"></p>
 <p id="display1"></p>
 <script>
     function phiendich() {
-
-        let tukhoa = new Array()
-        tukhoa[0] = document.getElementById("a").value
+        let flag = false;
+        let tukhoa = document.getElementById("a").value
         let english = ['hello', 'bye', 'smile', 'simple']
         let tiengivet = ['Xin Chào', 'Tạm Biệt', 'Cười', 'Đơn Giản']
-        for (let i = 0; i <= 3; i++) {
-            if (tukhoa[0].toString() === english[i].toString()) {
-                document.getElementById("display").innerText = tiengivet[i]
+        for (var i = 0; i <= 3; i++) {
+            if (tukhoa === english[i]){
+                flag = true
                 break
-            } else
-                document.getElementById("display").innerText = "Không tìm đc"
-        }
+            }
 
+        } if (flag){
+            document.getElementById("display").innerText = tiengivet[i]
+        } else
+            document.getElementById("display").innerText = "Không tìm thấy"
     }
 </script>
 
