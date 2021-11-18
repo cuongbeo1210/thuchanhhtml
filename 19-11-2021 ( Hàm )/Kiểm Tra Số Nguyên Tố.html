@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function KiemTraSNT() {
+        let stt = 1;
+        for (let i = 2; i <= Math.sqrt(input); i++) {
+            if (input % i === 0) {
+                stt = 0;
+                document.write("Không là số nguyên tố")
+                break
+            }
+        }
+        if (stt !== 0) {
+            document.write("Là Số Nguyên Tố")
+        }
+    }
+
+    let input = +prompt("Nhập số cần kiểm tra :")
+    if (input < 2){
+      document.write("Không phải số nguyên tố")
+    } else
+    KiemTraSNT(input)
+
+</script>
+
+</body>
+</html>
