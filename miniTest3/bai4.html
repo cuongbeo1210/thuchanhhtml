@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="display"></h1>
+<p><i id="display1"></i></p>
+<p><b id="display2"></b></p>
+<p id="display3"></p>
+<script>
+    let number = +prompt("Nhập số lượng phần tử :")
+    let arr = [];
+    let count = 0;
+    let count1 = 0;
+    let count2 = 0;
+    for (let i = 0; i < number; i++) {
+        let number1 = +prompt("Nhập phần tử :")
+        arr.push(number1)
+    }
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 3 === 0) {
+            count += 1;
+        } else if (arr[i] % 5 === 0) {
+            count1 += 1;
+        } else if (arr[i] % 3 === 0 || arr[i] % 5 === 0) {
+            count2 += 1;
+        }
+    }
+    if (count === count1 && count === count2) {
+        document.getElementById("display3").innerHTML = "HelloKitty"
+    } else if (count === count1) {
+        if (count > count2) {
+            document.getElementById("display3").innerHTML = "<h1>C1021H1</h1> " + "<br>" + "Helloworld"
+        } else {
+            document.getElementById("display2").innerHTML = "CodeGym"
+        }
+    } else if (count > count1) {
+        if (count === count2) {
+            document.getElementById("display3").innerHTML = "<h1>C1021H1</h1>" + "<br>" + "<b>CodeGym</b>"
+        } else if (count > count2) {
+            document.getElementById("display").innerHTML = "C1021H1"
+        } else {
+            document.getElementById("display2").innerHTML = "CodeGym"
+        }
+    } else {
+        if (count1 === count2) {
+            document.getElementById("display3").innerHTML = "<i>HelloWorld</i>" + "<br>" + "<b>CodeGym</b>"
+        } else if (count1 > count2) {
+            document.getElementById("display1").innerHTML = "HelloWorld"
+        } else {
+            document.getElementById("display2").innerHTML = "<b>CodeGym</b>"
+        }
+    }
+</script>
+</body>
+</html>

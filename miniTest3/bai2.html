@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = prompt("Nhập số lượng phần tử :")
+    let arr = [];
+    let count = 0;
+    for (let i = 0; i < number; i++) {
+        let number1 = prompt("Nhập phần tử :")
+        arr.push(number1)
+    }
+    let a = prompt("Nhập giá trị a bất kỳ :")
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === a){
+            count += 1;
+        }
+    }
+    document.write("Kiểu dữ liệu của a là : "+(typeof a) +"<br>")
+    document.write("Số lượng phần tử giống a là : "+count)
+</script>
+
+</body>
+</html>
