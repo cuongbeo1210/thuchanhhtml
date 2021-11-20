@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<input type="text" id="txt">
+<body onload="fakeTyping()" style="text-align: center;">
+<script>
+    let array = [];
+    let str = "";
+    array[1] ='T';
+    array[2] ='Ô';
+    array[3] ='I';
+    array[4] =' ';
+    array[5] ='L';
+    array[6] ='À';
+    array[7] =' ';
+    array[8] ='C';
+    array[9] ='Ư';
+    array[10] ='Ờ';
+    array[11] ='N';
+    array[12] ='G';
+    array[13] =' ';
+    array[14] ='Đ';
+    array[15] ='Ẹ';
+    array[16] ='P';
+    array[17] =' ';
+    array[18] ='T';
+    array[19] ='R';
+    array[20] ='A';
+    array[21] ='I';
+    array[22] ='!';
+
+    function fakeTyping()
+    {
+        let text = document.getElementById("txt").value;
+        let j = text.length;
+        if (j > 0)
+        {
+            for(let i = 1; i <= j; i++)
+            {
+                str = str + array[i];
+                if (i === 22)
+                {
+                    document.getElementById("txt").value= "";
+                    str = "";
+                }
+            }
+        }
+        document.getElementById("txt").value = str;
+        str = "";
+        setTimeout("fakeTyping()", 1);
+    }
+</script>
+</body>
+
+</html>

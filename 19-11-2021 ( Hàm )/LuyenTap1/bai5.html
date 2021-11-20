@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="checkStar(input)">
+<script>
+    let input = prompt("Nhập tên Sao : ")
+    let star = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+    let star1 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
+
+    function checkStar() {
+        if (star.includes(input)) {
+            document.write(star1[star.indexOf(input)])
+        } else
+            document.write("Không tìm thấy ngôi sao nào")
+    }
+</script>
+</body>
+</html>
