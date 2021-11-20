@@ -6,28 +6,28 @@
 </head>
 <body>
 <script>
-
-    function KiemTraSNT() {
-        let stt = 1;
-        for (let i = 2; i <= Math.sqrt(input); i++) {
-            if (input % i === 0) {
-                stt = 0;
-                document.write("Không là số nguyên tố")
-                break
+    function isPrime(number) {
+        number = 2;
+        let data = "";
+        while (number < 10000) {
+            let flag = true;
+            for (let i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i === 0) {
+                    flag = false;
+                    break;
+                }
             }
+            if (flag) {
+                data = data + number + ', ';
+            }
+            number++;
         }
-        if (stt !== 0) {
-            document.write("Là Số Nguyên Tố")
-        }
+        return data;
     }
 
-    let input = +prompt("Nhập số cần kiểm tra :")
-    if (input < 2){
-      document.write("Không phải số nguyên tố")
-    } else
-    KiemTraSNT(input)
+    let result = isPrime();
+    document.write(result);
 
 </script>
-
 </body>
 </html>
