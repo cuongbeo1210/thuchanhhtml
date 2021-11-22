@@ -5,7 +5,7 @@
     <title>Rectangle</title>
 </head>
 <body>
-<canvas id="myCanvas" width="300" height="300" style="border: 1px solid #000000" ></canvas>
+<canvas id="myCanvas" width="300" height="300" style="border: 1px solid #000000"></canvas>
 <script>
     class Rectangle {
         width;
@@ -31,33 +31,36 @@
         setHeight(height) {
             this.height = height;
         }
-        getWidth(){
+
+        getWidth() {
             return this.width
         }
-        getHeight(){
+
+        getHeight() {
             return this.height
         }
-        draw(){
+
+        draw() {
             let canvas = document.getElementById("myCanvas");
-            if (canvas.getContext)
-            {
+            if (canvas.getContext) {
                 let ctx = canvas.getContext('2d');
-                ctx.fillStyle='#fa4b2a';
+                ctx.fillStyle = '#fa4b2a';
                 ctx.fillRect(10, 40, width, this.height);
             }
         }
     }
-    let newRect = new Rectangle(100,50)
+
+    let newRect = new Rectangle(100, 50)
     let height = newRect.getHeight();
     let width = newRect.getWidth();
     newRect.draw()
-    console.log("Diện tích = "+newRect.area())
-    console.log("Chu vi là = "+newRect.perimeter())
+    console.log("Diện tích = " + newRect.area())
+    console.log("Chu vi là = " + newRect.perimeter())
     newRect.setHeight(200)
     newRect.setWidth(400)
     newRect.draw()
-    console.log("Diện tích mới = "+newRect.area())
-    console.log("Chu vi mới = "+newRect.perimeter())
+    console.log("Diện tích mới = " + newRect.area())
+    console.log("Chu vi mới = " + newRect.perimeter())
 </script>
 </body>
 </html>
